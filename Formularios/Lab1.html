@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de aluno</title>
+</head>
+<body>
+    <form 
+    action ="/cadastro"
+  method="post"
+  autocomplete="on"
+  enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Dados de Cadastro</legend>
+
+        <label for="name">Nome</label>
+            <input type="text"
+                name="nome"
+                id="name"
+                aria-describedby="name-help"
+                required>
+        <small id="name-help">Digite seu nome completo</small>
+
+        <label for="mail">Email</label>
+            <input type="email"
+                name="email"
+                id="mail"
+                required>
+
+        <label for="cpf">CPF</label>
+            <input type="text"
+                inputmode="numeric"
+                name="cpf"
+                id="cpf"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                placeholder="000.000.000-00"
+                required>
+
+        <label for="nascimento">Data de nascimento</label>
+            <input type="date"
+                id="nascimento"
+                name="Data de nascimento"
+                required>
+
+        <label for="curso">Curso</label>
+            <select id="curso"
+                name="curso">
+                <option value="CD">Ciencia de dados e IA</option>
+                <option value="ES">Engenharia de software</option>
+                <option value="EC">Engenharia da computação</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Turno</legend>
+
+            <input type="radio" id="manha" name="turno" value="manha" required>
+            <label for="manha">Manha</label>
+
+            <input type="radio" id="tarde" name="turno" value="tarde" required>
+            <label for="tarde">Tarde</label>
+
+            <input type="radio" id="noite" name="turno" value="noite" required>
+            <label for="noite">Noite</label>
+    </fieldset>
+    <fieldset>
+        <legend>Termos de envio</legend>
+            <label for="termos">Eu li e aceito os Termos de envio</label>
+                <input type="checkbox" id="termos" name="termos" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Envio</legend>
+        <button type="submit">Enviar cadastro</button>
+        <button type="reset">Limpar</button>
+    </fieldset>
+
+    
+    </form>
+
+</body>
+</html>
