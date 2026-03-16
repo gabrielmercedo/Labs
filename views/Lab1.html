@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de aluno</title>
+</head>
+<body>
+    <formaction 
+    action ="/cadastro"
+  method="post"
+  autocomplete="on"
+  enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Dados de Cadastro</legend>
+
+        <label for="name">Nome</label>
+            <input type="text"
+                name="nome"
+                id="name"
+                required>
+
+        <label for="mail">Email</label>
+            <input type="email"
+                name="email"
+                id="mail"
+                required>
+
+        <label for="cpf">CPF</label>
+            <input type="text"
+                inputmode="numeric"
+                name="cpf"
+                id="cpf"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                placeholder="000.000.000-00"
+                required>
+
+        <label for="nascimento">Data de nascimento</label>
+            <input type="date"
+                id="nascimento"
+                name="Data de nascimento"
+                pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+                placeholder="dd/mm/aaaa"
+                required>
+
+        <label for="curso">Curso</label>
+            <select id="curso"
+                name="curso">
+                <option value="CD">Ciencia de dados e IA</option>
+                <option value="ES">Engenharia de software</option>
+                <option value="EC">Engenharia da computação</option>
+
+        <label for="turno">Turno</label>
+            <select id="turno"
+                name="turno"></select>
+            <option value="Manha">Manha</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+
+    </fieldset>
+
+    
+
+</body>
+</html>
