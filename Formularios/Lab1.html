@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de aluno</title>
 </head>
+
+<link rel="stylesheet" href="lab1.css">
+
 <body>
     <form 
     action ="/cadastro"
@@ -15,20 +18,27 @@
     <fieldset>
         <legend>Dados de Cadastro</legend>
 
+        <div>
         <label for="name">Nome</label>
             <input type="text"
                 name="nome"
                 id="name"
                 aria-describedby="name-help"
                 required>
+        </div>
+        <div>       
         <small id="name-help">Digite seu nome completo</small>
+        </div>
 
+        <div>
         <label for="mail">Email</label>
             <input type="email"
                 name="email"
                 id="mail"
                 required>
+        </div>
 
+        <div>
         <label for="cpf">CPF</label>
             <input type="text"
                 inputmode="numeric"
@@ -37,13 +47,15 @@
                 pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
                 placeholder="000.000.000-00"
                 required>
-
+        </div>
+        <div>
         <label for="nascimento">Data de nascimento</label>
             <input type="date"
                 id="nascimento"
                 name="Data de nascimento"
                 required>
-
+        </div>
+        <div>
         <label for="curso">Curso</label>
             <select id="curso"
                 name="curso">
@@ -51,6 +63,8 @@
                 <option value="ES">Engenharia de software</option>
                 <option value="EC">Engenharia da computação</option>
             </select>
+        </div>
+
     </fieldset>
     <fieldset>
         <legend>Turno</legend>
