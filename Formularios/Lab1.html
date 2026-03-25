@@ -15,6 +15,10 @@
   autocomplete="on"
   enctype="multipart/form-data">
 
+    <div class="titulo">
+        <h1>Cadastro de Aluno</h1>
+    </div>
+
     <fieldset>
         <legend>Dados de Cadastro</legend>
 
@@ -69,25 +73,42 @@
     <fieldset>
         <legend>Turno</legend>
 
-            <input type="radio" id="manha" name="turno" value="manha" required>
             <label for="manha">Manha</label>
+            <input type="radio" id="manha" name="turno" value="manha" required>
 
-            <input type="radio" id="tarde" name="turno" value="tarde" required>
             <label for="tarde">Tarde</label>
+            <input type="radio" id="tarde" name="turno" value="tarde" required>
 
-            <input type="radio" id="noite" name="turno" value="noite" required>
             <label for="noite">Noite</label>
+            <input type="radio" id="noite" name="turno" value="noite" required>
+           
     </fieldset>
     <fieldset>
         <legend>Termos de envio</legend>
+            <div class="container">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptatibus odit? Itaque corporis aliquid deserunt nam dolorem perspiciatis laboriosam. Illum cum provident voluptate perferendis praesentium aperiam! Ut accusantium provident id!
+               </p>
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facere a soluta nihil dolore quos illo maxime vero, est, fuga ipsa magnam, ipsam sed. Consequatur accusamus nam eligendi eum magnam.
+               </p>
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facere a soluta nihil dolore quos illo maxime vero, est, fuga ipsa magnam, ipsam sed. Consequatur accusamus nam eligendi eum magnam.
+               </p>
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facere a soluta nihil dolore quos illo maxime vero, est, fuga ipsa magnam, ipsam sed. Consequatur accusamus nam eligendi eum magnam.
+               </p>
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facere a soluta nihil dolore quos illo maxime vero, est, fuga ipsa magnam, ipsam sed. Consequatur accusamus nam eligendi eum magnam.
+               </p>
+            </div>
             <label for="termos">Eu li e aceito os Termos de envio</label>
                 <input type="checkbox" id="termos" name="termos" required>
     </fieldset>
 
     <fieldset>
         <legend>Envio</legend>
-        <button type="submit">Enviar cadastro</button>
-        <button type="reset">Limpar</button>
+        <button class="botao" type="submit">Enviar cadastro</button>
+        <button class="botao" type="reset">Limpar</button>
     </fieldset>
 
     
